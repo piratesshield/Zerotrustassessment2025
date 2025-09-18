@@ -1,0 +1,5 @@
+{
+  "name": "Zero Trust Security Assessment",
+  "description": "An enterprise-grade platform for CISOs to evaluate their organization's security maturity across 10 critical Zero Trust domains. It provides detailed scoring, risk analysis, and CISO-level recommendations.",
+  "requestFramePermissions": []
+}
