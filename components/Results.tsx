@@ -1,8 +1,8 @@
-
 import React, { useMemo } from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { Results as ResultsType, AppState } from '../types';
 import { assessmentData } from '../constants/assessmentData';
+import ExecutiveSummary from './ExecutiveSummary';
 
 interface ResultsProps {
     results: ResultsType;
@@ -113,6 +113,8 @@ const Results: React.FC<ResultsProps> = ({ results, companyInfo, answers, onNewA
                     </ResponsiveContainer>
                 </div>
             </div>
+
+            <ExecutiveSummary results={results} />
 
             <div className="mb-10 page-break-after">
                 <RiskSummary answers={answers} />
